@@ -5,7 +5,7 @@ const SplashScreen = ({ navigation }) => {
         // Simule um tempo de carregamento 
         const timer = setTimeout(() => {
             navigation.replace('Login');
-        }, 3000);
+        }, 5000);
         return () => clearTimeout(timer);
     }, [navigation]);
     return (
@@ -13,7 +13,7 @@ const SplashScreen = ({ navigation }) => {
             flex: 1,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'gray'
+            backgroundColor: 'white'
         }}>
             <Image
                 source={require('../assets/steam-logo-steam-icon.png')}
@@ -21,9 +21,9 @@ const SplashScreen = ({ navigation }) => {
                 resizeMode="contain"
             />
             <Text style={{
-                color: "white", fontSize: 40, fontFamily: 'Brush Script MT',
+                color: "#ff0000", fontSize: 40, fontFamily: 'Brush Script MT',
                 fontWeight: 'bold', fontStyle: 'italic'
-            }}>Tela do Mário</Text>
+            }}>Tela Steam</Text>
         </View>
     );
 };
