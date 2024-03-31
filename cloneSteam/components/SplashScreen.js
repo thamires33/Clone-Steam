@@ -13,17 +13,17 @@ const SplashScreen = ({ navigation }) => {
             flex: 1,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'white'
+            backgroundColor: '#292c35'
         }}>
             <Image
-                source={require('../assets/steam-logo-steam-icon.png')}
-                style={{ width: 110, height: 100, marginBottom: 20 }}
+                source={require('../assets/logo-branco.png')}
+                style={{ width: 220, height: 200, marginBottom: 20 }} 
                 resizeMode="contain"
             />
             <Text style={{
-                color: "#ff0000", fontSize: 40, fontFamily: 'Brush Script MT',
+                color: "white", fontSize: 100, fontFamily:'Arial',
                 fontWeight: 'bold', fontStyle: 'italic'
-            }}>Tela Steam</Text>
+            }}>STEAM</Text>
         </View>
     );
 };
