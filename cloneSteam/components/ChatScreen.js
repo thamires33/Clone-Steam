@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 
 const ChatScreen = () => {
-
+  const navigation = useNavigation();
 
   return (
 
