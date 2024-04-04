@@ -199,33 +199,7 @@ const ComunityScreen = () => {
           </View>
         </View>
 
-        <View style={styles.postContainer}>
-          <View style={styles.userInfo}>
-            <Text style={styles.username}></Text>
-          </View>
-          <Text style={styles.PostTextBold}></Text>
-          <Text style={styles.postDescription}>
-          </Text>
-          <View style={styles.postButtonContainer}>
-            <TouchableOpacity style={styles.postButtonLeft} onPress={() => { /* Adicione a ação do botão aqui */ }}>
-              <Image
-                source={require('../assets/community/like.png')}
-                style={styles.postButtonImage}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.postButtonLeft} onPress={() => { /* Adicione a ação do botão aqui */ }}>
-              <Image
-                source={require('../assets/community/comments.png')}
-                style={styles.postButtonImage}
-              />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.postButtonRight} onPress={() => { /* Adicione a ação do botão aqui */ }}>
-              <Image
-                source={require('../assets/community/share.png')}
-                style={styles.postButtonImage}
-              />
-            </TouchableOpacity>
-          </View>
+        <View style={{ height: 100 }}> 
         </View>
         {/* Mais posts aqui */}
 
