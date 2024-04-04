@@ -251,7 +251,7 @@ const ComunityScreen = () => {
      style={styles.bottomMenuImage}
    />
  </TouchableOpacity>
- <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Shop')}>
+ <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Jogos')}>
    <Image
      source={require('../assets/community/shop.png')}
      style={styles.bottomMenuImage}

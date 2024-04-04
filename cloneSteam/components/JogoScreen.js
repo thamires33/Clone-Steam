@@ -25,17 +25,21 @@ const dadosJogos = [
 const JogoScreen = () => {
     const navigation = useNavigation();
     return (
-        <View style={styles.areaJogo}>
-            <Image
-                style={styles.imagemJogo}
-                source={{uri: data.urlImagem}}
-            />
-            <Text style={styles.textoJogo}>Nome: {data.nome}</Text>
-            <Text style={styles.textoJogo}>Preço: {data.idade}</Text>
-            <Text style={styles.textoJogo}>Gênero: {data.email}</Text>
-        </View>
+        dadosJogos.map((data, index) => (
+            <View key={index} style={styles.areaJogo}>
+                <Image
+                    style={styles.imagemJogo}
+                    source={{uri: data.urlImagem}}
+                />
+                <Text style={styles.textoJogo}>Nome: {data.nome}</Text>
+                <Text style={styles.textoJogo}>Preço: {data.preco}</Text>
+                <Text style={styles.textoJogo}>Gênero: {data.genero}</Text>
+            </View>
+        ))
     );
 };
+
+
 const styles = StyleSheet.create({
     areaJogo: {
         flexDirection: 'row',

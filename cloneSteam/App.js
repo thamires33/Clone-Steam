@@ -8,18 +8,17 @@ import CommunityScreen from './components/CommunityScreen';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import styles from './components/styles';
-import JogoScreen from './components/JogoScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="Spalsh" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="Splash" screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Splash" component={SplashScreen} />
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Community" component={CommunityScreen} />
-          <Stack.Screen name="Jogo" component={JogoScreen} />
+          <Stack.Screen name="Jogos" component={JogoScreen} />
         </Stack.Navigator>
         <StatusBar style="auto" />
       </NavigationContainer>
