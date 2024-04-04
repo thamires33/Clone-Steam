@@ -207,7 +207,7 @@ const ComunityScreen = () => {
       
       {/* Menu de navegação não funcionou como deveria*/}
  <View style={styles.bottomMenu}>
- <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Login')}>
+ <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Safety')}>
    <Image
      source={require('../assets/community/shield.png')}
      style={styles.bottomMenuImage}

@@ -144,7 +144,7 @@ const ChatScreen = () => {
 
       </ScrollView>
       <View style={styles.bottomMenu}>
-        <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Login')}>
+        <TouchableOpacity style={styles.bottomMenuItem} onPress={() => navigation.navigate('Safety')}>
           <Image
             source={require('../assets/community/shield.png')}
             style={styles.bottomMenuImage}
