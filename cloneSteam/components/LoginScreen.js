@@ -36,12 +36,14 @@ const LoginScreen = ({ navigation }) => {
                 </TouchableOpacity>
                 <TouchableOpacity style={css.login__help} onPress={() => setDisplay('flex')}>
                     <Text style={css.login__helpText1}> I need help signing in </Text>
+                    
                 </TouchableOpacity>
                 <TouchableOpacity style={css.login__help} onPress={() => setDisplay('flex')}>
                     <Text style={css.login__helpText2}> Don't have a Steam account? </Text>
                 </TouchableOpacity>
                 <Text style={css.login__txt__descript}> It's free and easy. Discover thoudands of PC games to
                     play with millions of new friends.</Text>
+                    
                 <TouchableOpacity style={css.login__help} onPress={() => setDisplay('flex')}>
                     <Text style={css.login__helpText3}> Learn more about Steam </Text>
                 </TouchableOpacity>
